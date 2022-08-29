@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My bag</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/my-bag.css" />
+    <style></style>
+  </head>
+  <body class="">
+    <!-- navbar -->
+    <div class="container-fluid shadow">
+      <div class="container">
+        <div
+          class="d-flex w-100 pt-3 pb-3 mb-4 d-flex flex-row justify-content-start align-items-center"
+        >
+          <!-- logo -->
+          <div>
+            <img
+              src="/assets/img/logoPlus.svg"
+              alt=""
+              srcset=""
+              width="120px"
+              height="35px"
+              class=""
+            />
+          </div>
+          <!-- searchbar -->
+          <form class="searchbar-container">
+            <div class="form-group">
+              <input type="text" class="input" placeholder="Search" />
+              <div class="icon">
+                <img src="/assets/icon/bootstrap-icon/search.svg" />
+              </div>
+            </div>
+            <button class="icon">
+              <img src="/assets/icon/bootstrap-icon/funnel.svg" />
+            </button>
+          </form>
+          <!-- etc -->
+          <div class="etcNavbar" style="margin-left: 150px">
+            <a href="#">
+              <img
+                src="/assets/icon/bootstrap-icon/cart.svg"
+                alt=""
+                srcset=""
+              />
+            </a>
+            <a href="#">
+              <img
+                src="/assets/icon/bootstrap-icon/bell.svg"
+                alt=""
+                srcset=""
+              />
+            </a>
+            <a href="#">
+              <img
+                src="/assets/icon/bootstrap-icon/envelope.svg"
+                alt=""
+                srcset=""
+              />
+            </a>
+
+            <a href="#">
+              <div
+                style="
+                  width: 30px;
+                  height: 30px;
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-image: url(/assets/img/avatar.webp);
+                  border-radius: 99px;
+                  image-rendering: -moz-crisp-edges;
+                  image-rendering: -o-crisp-edges;
+                  image-rendering: -webkit-optimize-contrast;
+                  image-rendering: crisp-edges;
+                  -ms-interpolation-mode: nearest-neighbor;
+                "
+              ></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- my-bag -->
+    <div class="container d-flex flex-column mb-5">
+      <h2 class="mb-3">My Bag</h2>
+      <div class="row">
+        <!-- left -->
+        <div class="col-lg-8 col-md-12">
+          <!-- select items -->
+          <div class="d-flex flex-column w-100">
+            <div
+              class="d-flex align-items-center w-100 mb-4"
+              style="
+                padding: 25px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 8px rgba(115, 115, 155, 0.25);
+              "
+            >
+              <input type="checkbox" style="margin-right: 25px" />
+              <div class="d-flex w-100 align-items-center">
+                <h6 style="margin-top: auto; margin-bottom: auto">
+                  Select all items&nbsp;
+                </h6>
+                <h6
+                  style="margin-top: auto; margin-bottom: auto; color: #9b9b9b"
+                >
+                  (2 items selected)
+                </h6>
+                <h6
+                  style="
+                    margin-left: auto;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-right: 0px;
+                    color: #db3022;
+                  "
+                >
+                  Delete
+                </h6>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="w-100 mb-4"
+            style="
+              padding: 24px;
+              border-radius: 4px;
+              box-shadow: 0px 0px 8px rgba(115, 115, 115, 0.25);
+            "
+          >
+            <div class="d-flex align-items-center w-100">
+              <input type="checkbox" style="margin-right: 25px" />
+              <div class="row w-100">
+                <div className="col-lg-7 col-md-12 mb-4">
+                  <div class="d-flex align-items-center w-100">
+                    <div
+                      style="
+                        height: 100px;
+                        width: 100px;
+                        margin-right: 25px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        background-image: url(/assets/img/cart-product1.webp);
+                        border-radius: 10px;
+                      "
+                    ></div>
+                    <!-- product-info -->
+                    <div class="d-flex flex-column" style="width: 20vw">
+                      <h6>Men's formal suit - Black</h6>
+                      <small style="color: #9b9b9b">Zalora Cloth</small>
+                    </div>
+                    <!-- product add or reduce -->
+                    <div class="d-flex flex-row align-items-center">
+                      <button
+                        class="rounded-circle border-0 text-white"
+                        style="
+                          width: 37px;
+                          height: 37px;
+                          background-color: #d4d4d4;
+                        "
+                      >
+                        <h3 style="margin-top: auto; margin-bottom: auto">-</h3>
+                      </button>
+                      <span style="padding-left: 25px; padding-right: 25px"
+                        >1</span
+                      >
+                      <button
+                        class="rounded-circle"
+                        style="
+                          width: 37px;
+                          height: 37px;
+                          background-color: transparent;
+                          border: none;
+                          border: 1px solid #d4d4d4;
+                        "
+                      >
+                        <h3
+                          class="text-dark"
+                          style="margin-top: auto; margin-bottom: auto"
+                        >
+                          +
+                        </h3>
+                      </button>
+                    </div>
+                    <!-- product delete -->
+                    <h6
+                      style="
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        margin-left: auto;
+                        margin-right: 0px;
+                      "
+                    >
+                      $ 20.0
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="w-100 mb-4"
+            style="
+              padding: 24px;
+              border-radius: 4px;
+              box-shadow: 0px 0px 8px rgba(115, 115, 115, 0.25);
+            "
+          >
+            <div class="d-flex align-items-center w-100">
+              <input type="checkbox" style="margin-right: 25px" />
+              <div class="row w-100">
+                <div className="col-lg-7 col-md-12 mb-4">
+                  <div class="d-flex align-items-center w-100">
+                    <div
+                      style="
+                        height: 100px;
+                        width: 100px;
+                        margin-right: 25px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        background-image: url(/assets/img/cart-product2.webp);
+                        border-radius: 10px;
+                      "
+                    ></div>
+                    <!-- product-info -->
+                    <div class="d-flex flex-column" style="width: 20vw">
+                      <h6>Men's Jacket jeans</h6>
+                      <small style="color: #9b9b9b">Zalora Cloth</small>
+                    </div>
+                    <!-- product add or reduce -->
+                    <div class="d-flex flex-row align-items-center">
+                      <button
+                        class="rounded-circle border-0 text-white"
+                        style="
+                          width: 37px;
+                          height: 37px;
+                          background-color: #d4d4d4;
+                        "
+                      >
+                        <h3 style="margin-top: auto; margin-bottom: auto">-</h3>
+                      </button>
+                      <span style="padding-left: 25px; padding-right: 25px"
+                        >1</span
+                      >
+                      <button
+                        class="rounded-circle"
+                        style="
+                          width: 37px;
+                          height: 37px;
+                          background-color: transparent;
+                          border: none;
+                          border: 1px solid #d4d4d4;
+                        "
+                      >
+                        <h3
+                          class="text-dark"
+                          style="margin-top: auto; margin-bottom: auto"
+                        >
+                          +
+                        </h3>
+                      </button>
+                    </div>
+                    <!-- product delete -->
+                    <h6
+                      style="
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        margin-left: auto;
+                        margin-right: 0px;
+                      "
+                    >
+                      $ 20.0
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="col-lg-4 col-md-12">
+          <div class="d-flex flex-column w-100">
+            <div
+              class="d-flex flex-column w-100"
+              style="
+                padding: 25px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 8px rgba(115, 115, 155, 0.25);
+              "
+            >
+              <h6 class="font-weight-bold mb-3">Shopping Summary</h6>
+              <div class="d-flex w-100 mb-3">
+                <h6 style="color: #9b9b9b">Total Price</h6>
+                <h6 style="margin-left: auto; margin: right 0px">$ 40.0</h6>
+              </div>
+              <button
+                style="
+                  padding: 8px;
+                  color: #fff;
+                  border: none;
+                  border-radius: 25px;
+                  background-color: #db3022;
+                "
+              >
+                Buy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "metropolis";
+  src: url("/assets/font/metropolis.regular.otf");
+}
+body {
+  font-family: "metropolis";
+}
+
+/* navbar */
+
+.searchbar-container {
+  display: flex;
+  margin-left: 13vw;
+  position: sticky;
+}
+.searchbar-container button {
+  margin-left: 10px;
+  border: 1px solid #8e8e93;
+  background-color: transparent;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+}
+.searchbar-container button img {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(84%) saturate(0%)
+    hue-rotate(46deg) brightness(97%) contrast(99%);
+}
+.searchbar-container .form-group {
+  display: flex;
+  height: 35px;
+  width: 450px;
+  border-radius: 25px;
+  border: 1px solid #8e8e93;
+}
+.searchbar-container .form-group .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  filter: brightness(0) saturate(100%) invert(49%) sepia(84%) saturate(0%)
+    hue-rotate(46deg) brightness(97%) contrast(99%);
+}
+.searchbar-container .form-group .input {
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  padding-left: 25px;
+}
+.searchbar-container .form-group .input:focus {
+  outline: none;
+}
+.etcNavbar {
+  display: flex;
+}
+.etcNavbar a {
+  padding: 0px 15px 0px 15px;
+}
+.etcNavbar a img {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(84%) saturate(0%)
+    hue-rotate(46deg) brightness(97%) contrast(99%);
+}
